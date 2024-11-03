@@ -8,14 +8,34 @@
     android:layout_marginVertical="30dp"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="logo"
-        android:src="@drawable/logo"
-        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="< quay lại"
+            android:textSize="18sp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:contentDescription="logo"
+            android:src="@drawable/logo"
+            tools:ignore="HardcodedText" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
