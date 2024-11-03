@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
         bottomNavigationView = findViewById(R.id.bottom_navigation);
-        sessionManager = new SessionManager(this);
 
         // Thiết lập listener cho bottom navigation
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {

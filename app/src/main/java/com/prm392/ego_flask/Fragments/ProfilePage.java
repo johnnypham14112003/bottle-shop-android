@@ -24,40 +24,8 @@ public class ProfilePage extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         //=====================================================================================
 
-        sessionManager = new SessionManager(requireContext());
-
-        btnLoginLogout = view.findViewById(R.id.btnLoginLogout);
-        tvUsername = view.findViewById(R.id.tvUsername);
-
-        updateUI();
-
-        btnLoginLogout.setOnClickListener(v -> {
-            if (sessionManager.isLoggedIn()) {
-                sessionManager.logout();
-                updateUI();
-            } else {
-                navigateToLogin();
-            }
-        });
 
         //=====================================================================================
         return view;
-    }
-
-    private void updateUI() {
-        if (sessionManager.isLoggedIn()) {
-            btnLoginLogout.setText("Đăng xuất");
-            tvUsername.setText("Xin chào, " + sessionManager.getUsername());
-        } else {
-            btnLoginLogout.setText("Đăng nhập");
-            tvUsername.setText("Vui lòng đăng nhập");
-        }
-    }
-
-    private void navigateToLogin() {
-        FragmentTransaction ft = requireActivity().getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_container, new LoginPage());
-        ft.addToBackStack(null);
-        ft.commit();
     }
 }
