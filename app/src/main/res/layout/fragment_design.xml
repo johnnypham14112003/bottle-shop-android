@@ -11,14 +11,338 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="30dp"
-        android:paddingBottom="30dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
 
-        <TextView
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="logo"
+            android:src="@drawable/logo"
+            tools:ignore="HardcodedText" />
+
+        <!--====================[ BODY ]====================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-paint"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_paint_bucket"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Màu Thân"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/colorBodyChose"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                app:cardBackgroundColor="#000000"
+                app:cardCornerRadius="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChooseColorBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Design Fragment"
-            android:textSize="24sp" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#0055c3"
+            android:text="Chọn Màu"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <!--====================[ TOP ]====================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-paint"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_paint_bucket"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Màu Nắp"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/colorTopChose"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                app:cardBackgroundColor="#000000"
+                app:cardCornerRadius="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChooseColorTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#0055c3"
+            android:text="Chọn Màu"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <!--====================[ STRAP ]====================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-paint"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_paint_bucket"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Màu Quai"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/colorStrapChose"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                app:cardBackgroundColor="#000000"
+                app:cardCornerRadius="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChooseColorStrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#0055c3"
+            android:text="Chọn Màu"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <!--====================[ NAME ]====================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-paint"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_laser"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Khắc Chữ"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:text="Ví trí"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChoosePart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#0055c3"
+            android:text="Chọn Vị Trí"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:text="Nội dung"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/etLazerText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="lazerText"
+                android:ems="10"
+                android:hint="Chữ muốn khắc..."
+                android:inputType="text"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+            <!--=================================-->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <!--=================================-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:text="Tin nhắn gửi quà"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/etGiftText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="giftText"
+                android:ems="10"
+                android:hint="Tin nhắn muốn tạo..."
+                android:inputType="text"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginVertical="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPreview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:backgroundTint="#0055c3"
+                android:text="Xem Trước"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:backgroundTint="#EF4444"
+                android:text="Reset"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnCreateOrder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:backgroundTint="#22C55E"
+                android:text="Thêm Vào Giỏ"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

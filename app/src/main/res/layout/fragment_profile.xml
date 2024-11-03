@@ -15,10 +15,16 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tvUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Profile Fragment"
-            android:textSize="24sp" />
+            android:layout_marginBottom="16dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnLoginLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"/>
     </LinearLayout>
 </ScrollView>
