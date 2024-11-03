@@ -12,6 +12,12 @@ import com.prm392.ego_flask.R;
 public class DesignPage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_design, container, false);
+        View view = inflater.inflate(R.layout.fragment_design, container, false);
+        //=====================================================================================
+
+        //Code in here...
+
+        //=====================================================================================
+        return view;
     }
 }

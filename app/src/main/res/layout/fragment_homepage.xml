@@ -1,18 +1,461 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white">
-        <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <ImageView
             android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="logo"
+            android:src="@drawable/logo"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="banner-1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_main"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Home Fragment"
-            android:textSize="24sp"/>
-    </ScrollView>
-</FrameLayout>
+            android:background="#0055c3"
+            android:paddingVertical="15dp"
+            android:text="CÂU CHUYỆN VỀ EGO FLASK"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="banner-2"
+            android:src="@drawable/banner_sp_1"
+            tools:ignore="HardcodedText,ImageContrastCheck" />
+
+        <!--=============================================================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Ngày nay, yếu tố cá nhân hóa đang ngày một phổ biến trong những sản phẩm và dịch vụ, Ego Flask đã ra đời với mục tiêu mang đến cơ hội cho mọi người sáng tạo và sở hữu chiếc bình giữ nhiệt thể hiện rõ cá tính của từng người. Chúng tôi tin rằng mọi người đều xứng đáng được nổi bật và được làm mới theo cách đặc biệt của riêng mình thông qua trải nghiệm cá nhân hóa hoàn toàn với sản phẩm bình giữ nhiệt tại Ego Flask."
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quá trình thiết kế không chỉ đơn thuần là việc chọn màu sắc và bộ phận, mà nó trở thành một cuộc phiêu lưu sáng tạo, một khám phá về chính bản thân. Khách hàng có thể xem trước và tùy chỉnh thiết kế của mình, tạo nên một chiếc bình giữ nhiệt hoàn toàn độc đáo và phản ánh cá nhân. EgoFlask cam kết rằng mỗi sản phẩm được đặt hàng sẽ được chọn từng bộ phận một, đóng gói và giao đến tận tay khách hàng. Điều này đảm bảo rằng mỗi chiếc bình giữ nhiệt EgoFlask là duy nhất và đáp ứng đúng yêu cầu của từng khách hàng."
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!--=============================================================-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="VÌ SAO BẠN NÊN CHỌN EGO FLASK?"
+            android:textAlignment="center"
+            android:textColor="#0055c3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <!--=============================================================-->
+
+        <!--=============[ REASON 1 ]=============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-like"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_like"
+                tools:ignore="HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Độ bền cao, giữ nhiệt tốt"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Với công nghệ tiên tiến và vật liệu cao cấp, sản phẩm của chúng tôi có độ bền vượt trội, đồng thời giữ nhiệt độ đồ uống lý tưởng trong thời gian dài."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!--=============[ REASON 2 ]=============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-like"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_heart"
+                tools:ignore="HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chất liệu an toàn cho sức khoẻ"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúng tôi cam kết sử dụng các chất liệu an toàn, thân thiện với sức khoẻ người dùng, không chứa các thành phần độc hại."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!--=============[ REASON 3 ]=============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-like"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_light_bulb"
+                tools:ignore="HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tự do sáng tạo"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Với tính năng Thiết kế, đây là không gian để bạn có thể thoả sức sáng tạo và thể hiện cá tính riêng với chiếc bình giữ nhiệt của riêng mình."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!--=============[ REASON 4 ]=============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="icon-like"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_warranty"
+                tools:ignore="HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bảo hành trong 30 ngày"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã hài lòng với chiếc bình giữ nhiệt mới của mình chưa? Nếu chưa, hãy liên hệ ngay chúng tôi trong vòng 30 ngày kể từ ngày nhận hàng để được đổi trả sản phẩm nhé!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!--=============================================================-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:contentDescription="banner-3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_sp_2"
+            tools:ignore="HardcodedText,ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#0055c3"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="45dp"
+                android:text="THỂ HIỆN &quot;CHẤT RIÊNG&quot; QUA SẢN PHẨM"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Với EgoFlask, khách hàng không chỉ đơn thuần là người mua hàng, mà họ được trở thành những người sáng tạo, những nhà thiết kế tài ba. Từ việc truy cập trang web hoặc ứng dụng của EgoFlask, khách hàng có thể bước vào một thế giới của sự tùy chỉnh và sáng tạo. Họ được tự do lựa chọn từ một loạt màu sắc tinh tế và tùy chỉnh các bộ phận của bình giữ nhiệt, từ cap-nắp, loop-dây quai đeo đến bottle-thân bình. Không chỉ vậy, khách hàng còn có khả năng khắc laser tên, thông điệp hoặc kí tự đặc biệt lên trên bình của mình, tạo nên một sản phẩm cá nhân hóa độc đáo, thể hiện phong cách và cá nhân của mỗi người."
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!--=============================================================-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:text="SẢN PHẨM NỔI BẬT"
+            android:textAlignment="center"
+            android:textColor="#0055c3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <!--===============[ ROW ]===============-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal">
+
+            <!--===============[ COLUMN 1 ]===============-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnBottlePurple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#FFE9D0"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgBottlePurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="bottle-purple"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bottle_purple"
+                        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:text="Creative"
+                        android:textColor="#0055c3"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnBottleOrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#FFE9D0"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgBottleOrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="bottle-purple"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bottle_orange"
+                        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:text="Dynamic"
+                        android:textColor="#0055c3"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content" />
+
+            <!--===============[ COLUMN 2 ]===============-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnBottleBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#FFE9D0"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgBottleBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="bottle-blue"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bottle_blue"
+                        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:text="Dependable"
+                        android:textColor="#0055c3"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnBottlePink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#FFE9D0"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/imgBottlePink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="40dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="bottle-pink"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bottle_pink"
+                        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:text="Graceful"
+                        android:textColor="#0055c3"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
