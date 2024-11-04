@@ -36,7 +36,7 @@ public class LoginPage extends Fragment {
 
                 // Thực hiện kiểm tra đăng nhập ở đây
                 // Giả sử đăng nhập thành công:
-                sessionManager.createLoginSession("user123", username);
+//                sessionManager.createLoginSession("user123", username);
 
                 // Quay lại fragment trước đó
                 requireActivity().getSupportFragmentManager().popBackStack();

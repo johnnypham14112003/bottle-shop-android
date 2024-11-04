@@ -8,6 +8,8 @@ public class SessionManager {
     private static final String KEY_IS_LOGGED_IN = "isLoggedIn";
     private static final String KEY_USER_ID = "userId";
     private static final String KEY_USERNAME = "username";
+    private static final String KEY_TOKEN = "token";
+    private static final String KEY_ROLE = "role";
 
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
@@ -19,10 +21,12 @@ public class SessionManager {
         editor = pref.edit();
     }
 
-    public void createLoginSession(String userId, String username) {
+    public void createLoginSession(String userId, String username, String token, String role) {
         editor.putBoolean(KEY_IS_LOGGED_IN, true);
         editor.putString(KEY_USER_ID, userId);
         editor.putString(KEY_USERNAME, username);
+        editor.putString(KEY_TOKEN, token);
+        editor.putString(KEY_ROLE, role);
         editor.commit();
     }
 
@@ -42,4 +46,13 @@ public class SessionManager {
     public String getUsername() {
         return pref.getString(KEY_USERNAME, null);
     }
+
+    public String getToken() {
+        return pref.getString(KEY_TOKEN, null);
+    }
+
+    public String getRole() {
+        return pref.getString(KEY_ROLE, null);
+    }
 }
+
