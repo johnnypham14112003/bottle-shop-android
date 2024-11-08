@@ -1,100 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <!-- activity_signup.xml -->
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:paddingBottom="30dp">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="< quay lại"
-                android:textSize="18sp"
-                android:layout_marginBottom="30dp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-            <!-- Logo -->
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:contentDescription="logo"
-                android:src="@drawable/logo"
-                tools:ignore="HardcodedText" />
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-        </LinearLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/returnPage"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Sign Up Form"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:text="< quay lại"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:contentDescription="logo"
+            android:src="@drawable/logo"
+            tools:ignore="HardcodedText" />
 
-        <EditText
-            android:id="@+id/signupUsername"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:autofillHints="username"
-            android:hint="Username"
-            android:inputType="text"
-            android:textColor="@color/black"
-            android:textColorHint="#546E7A" />
-
-        <EditText
-            android:id="@+id/signupPassword"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:autofillHints="password"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColorHint="#546E7A" />
-
-        <EditText
-            android:id="@+id/signupConfirmPassword"
-            android:layout_width="350dp"
-            android:layout_height="48dp"
-            android:autofillHints="password"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            android:textColor="@color/black"
-            android:textColorHint="#546E7A" />
-
-        <TextView
-            android:id="@+id/signInLink"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:clickable="true"
-            android:text="Already Account ? Sign In"
-            android:textColor="#0000FF" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <Space
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="----Or----" />
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/signUpBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="SIGN UP" />
+            android:id="@+id/btnToLogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BED5FF"
+            android:text="TÔI ĐÃ CÓ TÀI KHOẢN"
+            android:textColor="#000"
+            android:textSize="17sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnToSignup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0055c3"
+            android:text="KHÔNG, TÔI LÀ NGƯỜI MỚI"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp"
+        android:text="Tạo Tài Khoản Mới"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/signupUsername"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:autofillHints="username"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:autofillHints="password"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#546E7A"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/signupConfirmPassword"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:autofillHints="password"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#546E7A"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="#0055c3"
+        android:text="ĐĂNG KÝ"
+        android:textSize="17sp"
+        app:cornerRadius="5dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

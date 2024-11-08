@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginVertical="40dp"
+        android:layout_marginTop="20dp"
         android:text="CHÀO BẠN!"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -61,7 +61,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnToLogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="#0055c3" android:textColor="#fff"
+            android:text="TÔI ĐÃ CÓ TÀI KHOẢN"
+            android:textSize="17sp"
+            app:cornerRadius="5dp"
+            tools:ignore="HardcodedText" />
         <Button
             android:id="@+id/btnToSignup"
             android:layout_width="0dp"
@@ -71,17 +83,6 @@
             android:backgroundTint="#96BED5FF"
             android:text="KHÔNG, TÔI LÀ NGƯỜI MỚI"
             android:textColor="#000"
-            android:textSize="17sp"
-            app:cornerRadius="5dp"
-            tools:ignore="HardcodedText" />
-        <Button
-            android:id="@+id/btnToLogin"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginVertical="10dp"
-            android:backgroundTint="#0055c3" android:textColor="#fff"
-            android:text="TÔI ĐÃ CÓ TÀI KHOẢN"
             android:textSize="17sp"
             app:cornerRadius="5dp"
             tools:ignore="HardcodedText" />
@@ -121,17 +122,4 @@
         android:textSize="17sp"
         app:cornerRadius="5dp"
         tools:ignore="HardcodedText" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:text="Hoặc đăng nhập bằng" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:text="Google" />
-
-
 </LinearLayout>
